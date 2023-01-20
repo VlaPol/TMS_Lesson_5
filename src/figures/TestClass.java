@@ -20,6 +20,13 @@ public class TestClass {
         System.out.println("Triangle area is: " + triagle.area() + " and perimeter is:  " + triagle.perimeter());
         System.out.println("Circle area is: " + Math.round(circle.area()) + " and perimeter is:  " + circle.perimeter());
 
+        System.out.println("******** Вывод через вызов метода родительского класса *************");
+
+        rect.showInfo(rect);
+        triagle.showInfo(triagle);
+        circle.showInfo(circle);
+        System.out.println("**********************************************************************");
+
         Figure [] array = new Figure[5];
         array[0] = rect;
         array[1] = rect2;
